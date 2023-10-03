@@ -1,0 +1,39 @@
+/* Custom styles for parking spots */
+.parking-lot {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .parking-spot {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #4a4a4a;
+    margin: 5px;
+    padding: 10px;
+    cursor: not-allowed;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e0e0e0; /* Default color for non-free spots */
+  }
+  
+  .parking-spot.Free {
+    cursor: pointer;
+    background-color: #4caf50;
+  }
+  
+  .parking-spot.selected {
+    background-color: #2196f3;
+  }
+  
+  .spot-content {
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+  }
+  
